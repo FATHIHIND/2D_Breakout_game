@@ -6,10 +6,22 @@
     <style>
     	* { padding: 0; margin: 0; }
     	canvas { background: #eee; display: block; margin: 0 auto; }
+        body{
+            background-color: black;
+        }
+        h1{
+            color: white;
+        }
     </style>
 </head>
 <body>
 <br>
+<br>
+<center>
+    <h1>
+        🎉🥳 Breakoutgame-2D 🍭 
+    </h1>
+</center>
 <br>
 <canvas id="myCanvas" width="480" height="320"></canvas>
 
@@ -107,7 +119,7 @@ function drawBall() {
 function drawPaddle() {
     ctx.beginPath();
     ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "black";
     ctx.fill();
     ctx.closePath();
 }
